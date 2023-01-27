@@ -443,11 +443,16 @@ input[type=checkbox]:checked ~ div {
   line-height: 43px;
   color: #dfddd3;
 }
+@media screen and (max-width: 425px) {
+  .loader__title {
+    font-size: 22px;
+  }
+}
 
 .loader__title::after {
   content: "";
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   background: currentColor;
   position: absolute;
   bottom: 10px;
@@ -489,6 +494,12 @@ input[type=checkbox]:checked ~ div {
   border: 2px solid #dfddd3;
   color: #d5f037;
 }
+@media screen and (max-width: 425px) {
+  .loader__line {
+    width: 336px;
+    height: 46px;
+  }
+}
 
 .loader__line::before {
   content: "";
@@ -514,6 +525,12 @@ input[type=checkbox]:checked ~ div {
   color: #dfddd3;
   -webkit-animation: percentage 10s linear infinite;
           animation: percentage 10s linear infinite;
+}
+@media screen and (max-width: 425px) {
+  .loader__line:after {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 @-webkit-keyframes loading {
