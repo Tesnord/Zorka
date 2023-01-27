@@ -81,7 +81,7 @@ main {
   justify-content: space-between;
   align-items: center;
   min-height: 98px;
-  border-top: 1px solid #d5f037;
+  border-bottom: 1px solid #d5f037;
 }
 @media screen and (max-width: 426px) {
   .header .header-container {
@@ -201,6 +201,11 @@ main {
   align-items: center;
   margin-top: 102px;
 }
+@media screen and (max-width: 425px) {
+  .form__wrapper {
+    margin: 0;
+  }
+}
 
 .form__create--position {
   margin-bottom: 20px;
@@ -209,11 +214,31 @@ main {
 .form__input--position {
   margin-bottom: 80px;
 }
+@media screen and (max-width: 425px) {
+  .form__input--position {
+    margin-bottom: 62px;
+  }
+}
+
+.form__input--position article + article {
+  margin-left: 5px;
+}
+
+.form__create--position article + article {
+  margin-left: 5px;
+}
 
 .form__text {
   font-size: 22px;
   line-height: 26px;
   color: #dfddd3;
+}
+@media screen and (max-width: 425px) {
+  .form__text {
+    font-size: 20px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+  }
 }
 
 article {
@@ -225,6 +250,13 @@ article {
   border: 1px solid #bebebe;
   box-sizing: border-box;
   color: #dfddd3;
+}
+@media screen and (max-width: 425px) {
+  article {
+    width: 163px;
+    height: 46px;
+    margin: 0;
+  }
 }
 
 article div {
@@ -262,11 +294,21 @@ input[type=checkbox]:checked ~ div {
   color: #dfddd3;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 425px) {
+  .form__create-text {
+    width: 336px;
+  }
+}
 
 .form__product-text {
   width: 410px;
   color: #dfddd3;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 425px) {
+  .form__product-text {
+    width: 336px;
+  }
 }
 
 .form__product-create {
@@ -276,6 +318,11 @@ input[type=checkbox]:checked ~ div {
   border: 1px solid #bebebe;
   color: #d5f037;
   background: #000000;
+}
+@media screen and (max-width: 425px) {
+  .form__product-create {
+    width: 336px;
+  }
 }
 
 .form__product-create::-moz-placeholder {
@@ -297,6 +344,11 @@ input[type=checkbox]:checked ~ div {
   border: 1px solid #bebebe;
   background: #000000;
   color: #d5f037;
+}
+@media screen and (max-width: 425px) {
+  .form__product-textarea {
+    width: 336px;
+  }
 }
 
 .form__product-textarea::-moz-placeholder {
@@ -322,6 +374,11 @@ input[type=checkbox]:checked ~ div {
   padding: 23px 104px;
   background: #dfddd3;
   color: #000000;
+}
+@media screen and (max-width: 425px) {
+  .form__button {
+    margin-bottom: 46px;
+  }
 }
 
 .answer {
