@@ -53,6 +53,12 @@ main {
   border: 1px solid #dfddd3;
   padding: 23px 104px;
 }
+@media screen and (max-width: 425px) {
+  .tn-btn__primary {
+    font-size: 18px;
+    padding: 23px 100px;
+  }
+}
 .tn-btn__secondary {
   color: #dfddd3;
   background: transparent;
@@ -384,13 +390,24 @@ input[type=checkbox]:checked ~ div {
 .answer {
   padding: 108px 0 74px;
 }
+@media screen and (max-width: 425px) {
+  .answer {
+    padding: 0;
+  }
+}
 .answer .tn-container {
   display: flex;
+}
+@media screen and (max-width: 425px) {
+  .answer .tn-container {
+    display: block;
+  }
 }
 .answer__result-title {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
+  margin-top: 48px;
   margin-bottom: 25px;
   color: #dfddd3;
 }
@@ -401,6 +418,11 @@ input[type=checkbox]:checked ~ div {
   line-height: 43px;
   color: #dfddd3;
 }
+@media screen and (max-width: 425px) {
+  .answer__result-text {
+    margin-bottom: 40px;
+  }
+}
 .answer__wrapper {
   display: flex;
   flex-direction: column;
@@ -409,6 +431,12 @@ input[type=checkbox]:checked ~ div {
   width: 570px;
   margin-left: 10%;
   height: calc(100vh - 280px);
+}
+@media screen and (max-width: 425px) {
+  .answer__wrapper {
+    width: 336px;
+    margin: 0;
+  }
 }
 .answer__text {
   font-weight: 400;
@@ -419,8 +447,21 @@ input[type=checkbox]:checked ~ div {
 .answer__text:not(:nth-last-child(1)) {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 425px) {
+  .answer__text {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+}
 .answer__btn .tn-btn__secondary {
   padding: 26px 65px;
+}
+@media screen and (max-width: 425px) {
+  .answer__btn .tn-btn__secondary {
+    width: 336px;
+    padding: 23px 100px;
+  }
 }
 
 .loader {

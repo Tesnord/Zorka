@@ -1,15 +1,13 @@
-if (document.querySelector('.main')) {
+if (document.querySelector(".main")) {
+  const button = document.querySelector(".tn-btn__primary");
+  const handleClick = () => {
+    if (true) {
+      window.location.href = "question.html";
+      // window.location.href = 'answer.html'
+    } else {
+      document.querySelector(".js_btn").click();
+    }
+  };
 
-    const button = document.querySelector('.tn-btn__primary')
-    const handleClick = () => {
-        if (true) {
-            window.location.href = 'question.html'
-            // window.location.href = 'answer.html'
-        } else {
-            document.querySelector('.js_btn').click()
-        }
-    };
-    
-    button.addEventListener("click", handleClick);
-
+  button.addEventListener("click", handleClick);
 }

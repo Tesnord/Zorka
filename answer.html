@@ -1,114 +1,180 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/img/favicons/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="shortcut icon"
+      href="/src/img/favicons/favicon.webp"
+      type="image/webp"
+    />
+    <link
+      rel="shortcut icon"
+      href="/src/img/favicons/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preload" href="/src/fonts/Tickerbit-regular.woff2" as="font" />
+    <link rel="preload" href="/src/fonts/Tickerbit-regular.woff" as="font" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>answer</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="/src/img/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="shortcut icon" href="/src/img/favicons/favicon.webp" type="image/webp">
-  <link rel="shortcut icon" href="/src/img/favicons/favicon.png" type="image/x-icon">
-  <link rel="preload" href="/src/fonts/Tickerbit-regular.woff2" as="font" />
-  <link rel="preload" href="/src/fonts/Tickerbit-regular.woff" as="font" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="/src/css/style.css" />
-  <title>answer</title>
-</head>
-
-<body>
-  <main class="answer">
-    <div class="tn-container">
-      <div class="answer__result">
-        <h1 class="answer__result-title">AI result</h1>
-        <p class="answer__result-text">
-          Create a video script for influencer ads for the mobile game “Match
-          Masters”
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <p class="header__text">
+          <span class="header__text--color">AI AGENT</span> by Zorka.Agency
         </p>
+        <a href="#"
+          ><img
+            class="header__logo"
+            src="/src/img/favicons/favicon.png"
+            alt="Логотип"
+        /></a>
       </div>
-      <div class="answer__wrapper">
-        <div>
-          <p class="answer__text">
-            Welcome to the exciting world of ”Match Masters”! This fast-paced
-            puzzle game has taken the mobile gaming world by storm, and now it’s
-            available on your favorite platform.
-          </p>
-          <p class="answer__text">With intuitive controls and
-            stunning graphics, ”Match Masters” is easy to pick up but hard to
-            put down. Match tiles and collect power-ups to blast your way
-            through hundreds of levels, and unlock special boosters to give you
-            an extra edge.
-          </p>
-          <p class="answer__text">But ”Match Masters” isn’t just about beating levels —
-            it’s about competing with friends and players from around the world.
-            With global leaderboards and a variety of game modes, you can test
-            your skills against the best of the best.
-          </p>
-          <p class="answer__text">So why wait? Download
-            ”Match Masters” today and join the ranks of the puzzle-solving
-            elite. Can you rise to the top and become the ultimate Match Master?
-          </p>
-        </div>
+    </header>
 
-        <div class="answer__btn">
-          <button type="button" class="tn-btn tn-btn__primary" data-bs-toggle="modal"
-            data-bs-target="#finalModal">COPY</button>
-          <a class="tn-btn tn-btn__secondary" href="./main.html">TRY AGAIN</a>
+    <main class="answer">
+      <div class="tn-container">
+        <div class="answer__result">
+          <h1 class="answer__result-title">AI result</h1>
+          <p class="answer__result-text">
+            Create a video script for influencer ads for the mobile game “Match
+            Masters”
+          </p>
         </div>
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="tn-container">
-      <p class="footer__text">
-        <span class="footer__text--color">AI AGENT</span> by Zorka.Agency
-      </p>
-      <a href="#"><img class="footer__logo" src="/src/img/logo.png" alt="Логотип" /></a>
-    </div>
-  </footer>
-
-  <!-- Modal -->
-  <div class="modal fade modal__finish" id="finalModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-        </div>
-        <div class="modal-body">
-          <!-- <div class="modal__wrapper"> -->
-          <div class="modal__wrapper-head">
-            <div class="modal-body__title">Ok, AI is cool. It’s fast as Flash and logical as Sheldon Cooper.</div>
-            <div class="modal-body__text">But it can’t replicate human emotions or create something completely new.
-              Humans are able to do so much more; for
-              example, hit your target audience right in the feels with mind-blowing ad campaign ideas.</div>
-          </div>
-          <div class="modal__wrapper-bottom">
-            <div class="modal-body__title">Send your brief to Zorka.Agency</div>
-            <div class="modal-body__text">and we can offer you best solutions. <span>Click click!</span></div>
-            <a href="#" class="tn-btn tn-btn__primary">SAY HELLO</a>
-          </div>
-          <!-- </div> -->
-        </div>
-        <div class="footer">
-          <div class="tn-container">
-            <p class="footer__text">
-              <span class="footer__text--color">AI AGENT</span> by Zorka.Agency
+        <div class="answer__wrapper">
+          <div>
+            <p class="answer__text">
+              Welcome to the exciting world of ”Match Masters”! This fast-paced
+              puzzle game has taken the mobile gaming world by storm, and now
+              it’s available on your favorite platform.
             </p>
-            <a href="#"><img class="footer__logo" src="/src/img/logo.png" alt="Логотип" /></a>
+            <p class="answer__text">
+              With intuitive controls and stunning graphics, ”Match Masters”
+              is easy to pick up but hard to put down. Match tiles and collect
+              power-ups to blast your way through hundreds of levels, and unlock
+              special boosters to give you an extra edge.
+            </p>
+            <p class="answer__text">
+              But ”Match Masters” isn’t just about beating levels — it’s about
+              competing with friends and players from around the world. With
+              global leaderboards and a variety of game modes, you can test your
+              skills against the best of the best.
+            </p>
+            <p class="answer__text">
+              So why wait? Download ”Match Masters” today and join the ranks
+              of the puzzle-solving elite. Can you rise to the top and become
+              the ultimate Match Master?
+            </p>
+          </div>
+
+          <div class="answer__btn">
+            <button
+              type="button"
+              class="tn-btn tn-btn__primary"
+              data-bs-toggle="modal"
+              data-bs-target="#finalModal"
+            >
+              COPY
+            </button>
+            <a class="tn-btn tn-btn__secondary" href="./main.html">TRY AGAIN</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="tn-container">
+        <p class="footer__text">
+          <span class="footer__text--color">AI AGENT</span> by Zorka.Agency
+        </p>
+        <a href="#"
+          ><img class="footer__logo" src="/src/img/logo.png" alt="Логотип"
+        /></a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade modal__finish"
+      id="finalModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- <div class="modal__wrapper"> -->
+            <div class="modal__wrapper-head">
+              <div class="modal-body__title">
+                Ok, AI is cool. It’s fast as Flash and logical as Sheldon
+                Cooper.
+              </div>
+              <div class="modal-body__text">
+                But it can’t replicate human emotions or create something
+                completely new. Humans are able to do so much more; for example,
+                hit your target audience right in the feels with mind-blowing
+                ad campaign ideas.
+              </div>
+            </div>
+            <div class="modal__wrapper-bottom">
+              <div class="modal-body__title">
+                Send your brief to Zorka.Agency
+              </div>
+              <div class="modal-body__text">
+                and we can offer you best solutions. <span>Click click!</span>
+              </div>
+              <a href="#" class="tn-btn tn-btn__primary">SAY HELLO</a>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="footer">
+            <div class="tn-container">
+              <p class="footer__text">
+                <span class="footer__text--color">AI AGENT</span> by
+                Zorka.Agency
+              </p>
+              <a href="#"
+                ><img
+                  class="footer__logo"
+                  src="/src/img/logo.png"
+                  alt="Логотип"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Scripts -->
-  <script type="module" src="/src/js/app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- Scripts -->
+    <script type="module" src="/src/js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

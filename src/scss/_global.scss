@@ -54,6 +54,11 @@ main {
       background: #dfddd3;
       border: 1px solid #dfddd3;
       padding: 23px 104px;
+
+      @media screen and (max-width: 425px) {
+        font-size: 18px;
+        padding: 23px 100px;
+      }
     }
 
     &__secondary {
