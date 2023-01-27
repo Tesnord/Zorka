@@ -36,6 +36,10 @@ main {
     margin: 0 40px;
     position: relative;
     z-index: 2;
+
+    @media screen and (max-width: 425px) {
+      margin: 0 19px;
+    }
   }
   &-btn {
     font-size: 28px;
@@ -77,4 +81,3 @@ main {
   opacity: 0.2;
   z-index: 1;
 }
-
