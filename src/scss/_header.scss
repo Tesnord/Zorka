@@ -6,6 +6,10 @@
     min-height: 98px;
     border-top: 1px solid #d5f037;
 
+    @media screen and (max-width: 426px) {
+      padding: 0 20px;
+    }
+
     @media screen and (min-width: 426px) {
       display: none;
     }
