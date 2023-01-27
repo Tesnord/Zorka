@@ -1,12 +1,12 @@
-.footer {
-  .tn-container {
+.header {
+  .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 98px;
     border-top: 1px solid #d5f037;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (min-width: 426px) {
       display: none;
     }
   }
@@ -14,7 +14,7 @@
     font-size: 12px;
     line-height: 1.5;
     color: #ffffff;
-    @media screen and (max-width: 425px) {
+    @media screen and (min-width: 426px) {
       display: none;
     }
   }
@@ -23,7 +23,7 @@
     font-size: 32px;
     line-height: 1.5;
     color: #d5f037;
-    @media screen and (max-width: 425px) {
+    @media screen and (min-width: 426px) {
       display: none;
     }
   }

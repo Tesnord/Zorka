@@ -1,11 +1,13 @@
 .main {
   padding-top: 61px;
+
   @media screen and (max-width: 425px) {
     padding-top: 40px;
   }
 
   &__head {
     margin-bottom: 65px;
+
     @media screen and (max-width: 425px) {
       margin-bottom: 40px;
     }
@@ -13,6 +15,7 @@
 
   &__bottom {
     margin-left: 40%;
+
     @media screen and (max-width: 425px) {
       margin-left: 0;
     }
@@ -23,6 +26,7 @@
       @media screen and (max-width: 425px) {
         margin-bottom: 43px;
         margin-top: 0;
+        padding: 23px 114px;
       }
     }
 
