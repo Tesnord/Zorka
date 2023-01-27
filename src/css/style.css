@@ -287,7 +287,167 @@ input[type=checkbox]:checked ~ div {
   padding: 26px 65px;
 }
 
-/* for demo */
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader__title {
+  color: #d5f037;
+  display: inline-block;
+  position: relative;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-family: "Tickerbit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #dfddd3;
+}
+
+.loader__title::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: currentColor;
+  position: absolute;
+  bottom: 10px;
+  right: -5px;
+  box-sizing: border-box;
+  -webkit-animation: animloader 1s linear infinite;
+          animation: animloader 1s linear infinite;
+}
+
+@-webkit-keyframes animloader {
+  0% {
+    box-shadow: 10px 0 rgba(255, 255, 255, 0), 20px 0 rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow: 10px 0 white, 20px 0 rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 10px 0 white, 20px 0 white;
+  }
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: 10px 0 rgba(255, 255, 255, 0), 20px 0 rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow: 10px 0 white, 20px 0 rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 10px 0 white, 20px 0 white;
+  }
+}
+.loader__line {
+  display: block;
+  position: relative;
+  height: 80px;
+  width: 650px;
+  background: #000000;
+  border: 2px solid #dfddd3;
+  color: #d5f037;
+}
+
+.loader__line::before {
+  content: "";
+  background: #d5f037;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  -webkit-animation: loading 10s linear infinite;
+          animation: loading 10s linear infinite;
+}
+
+.loader__line:after {
+  content: "";
+  position: absolute;
+  top: -35px;
+  width: 100%;
+  height: 100%;
+  text-align: end;
+  font-size: 36px;
+  line-height: 32px;
+  color: #dfddd3;
+  -webkit-animation: percentage 10s linear infinite;
+          animation: percentage 10s linear infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes percentage {
+  0% {
+    content: "0%";
+  }
+  10% {
+    content: "10%";
+  }
+  20% {
+    content: "20%";
+  }
+  50% {
+    content: "50%";
+  }
+  70% {
+    content: "70%";
+  }
+  90% {
+    content: "90%";
+  }
+  100% {
+    content: "100%";
+  }
+}
+@keyframes percentage {
+  0% {
+    content: "0%";
+  }
+  10% {
+    content: "10%";
+  }
+  20% {
+    content: "20%";
+  }
+  50% {
+    content: "50%";
+  }
+  70% {
+    content: "70%";
+  }
+  90% {
+    content: "90%";
+  }
+  100% {
+    content: "100%";
+  }
+}
+.loading-page {
+  display: flex;
+  justify-content: center;
+}
+
 .modal__main .modal-dialog .modal-content {
   background-color: #000000;
 }
