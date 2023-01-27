@@ -1,0 +1,40 @@
+.main {
+    padding-top: 61px;
+
+    &__head {
+        margin-bottom: 65px;
+    }
+
+    &__bottom {
+        margin-left: 40%;
+
+        .tn-btn {
+            margin-top: 20px;
+        }
+        
+        .js_btn {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-size: 192px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #DFDDD3;
+    }
+
+    &__text {
+        font-size: 22px;
+        line-height: 1.18;
+        color: #DFDDD3;
+
+        &--head {
+            max-width: 470px;
+        }
+
+        &--bottom {
+            max-width: 500px;
+        }
+    }
+} 
