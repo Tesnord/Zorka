@@ -1,6 +1,9 @@
 .modal__main {
   .modal {
     &-dialog {
+      .background {
+        display: none;
+      }
       .modal-content {
         background-color: #000000;
 
@@ -12,12 +15,16 @@
           z-index: 2;
 
           @media screen and (max-width: 425px) {
-            // transform: translate(0, 98px);
             background-color: rgba(0, 0, 0, 0.9);
           }
         }
         .modal-header {
           padding: 46px 40px 0 0;
+
+          @media screen and (max-width: 425px) {
+            padding: 0;
+          }
+
           border: none;
           .btn-close {
             background: url(/src/img/close.svg) center no-repeat;
@@ -25,12 +32,17 @@
             height: 30px;
             opacity: 1;
 
+            @media screen and (max-width: 425px) {
+              display: none;
+            }
+
             &:focus {
               box-shadow: none;
             }
           }
         }
         .modal-body {
+          position: relative;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -38,12 +50,34 @@
           margin: 0 auto;
           z-index: 2;
 
+          .btn-close {
+            position: absolute;
+            top: 34px;
+            right: 20px;
+            background: url(/src/img/close.svg) center no-repeat;
+            width: 30px;
+            height: 30px;
+            opacity: 1;
+
+            @media screen and (min-width: 426px) {
+              display: none;
+            }
+        
+            &:focus {
+              box-shadow: none;
+            }
+          }
+
           &__title {
             font-weight: 400;
             font-size: 36px;
             line-height: 1.2;
             color: #dfddd3;
             margin-bottom: 10px;
+
+            @media screen and (max-width: 425px) {
+              margin-bottom: 20px;
+            }
           }
           &__text {
             font-weight: 400;
@@ -51,12 +85,20 @@
             line-height: 1.18;
             color: #dfddd3;
             margin-bottom: 30px;
+
+            @media screen and (max-width: 425px) {
+              margin-bottom: 20px;
+            }
           }
           .tn-btn__secondary {
             font-weight: 400;
             font-size: 28px;
             line-height: 1.21;
             padding: 23px 104px;
+
+            @media screen and (max-width: 425px) {
+              font-size: 18px;
+            }
           }
         }
       }
@@ -75,19 +117,32 @@
     padding: 0 40px;
 
     @media screen and (max-width: 425px) {
-      padding: 0 19px;
-      transform: translate(0, 98px);
+      padding: 0;
     }
 
     .modal-header {
       padding: 68px 40px 0 0;
       border: none;
 
+      .tn-container {
+        @media screen and (max-width: 425px) {
+            padding: 0;
+          }
+      }
+
+      @media screen and (max-width: 425px) {
+        padding: 0;
+      }
+
       .btn-close {
         background: url(/src/img/close.svg) center no-repeat;
         width: 30px;
         height: 30px;
         opacity: 1;
+
+        @media screen and (max-width: 425px) {
+          display: none;
+        }
 
         @media screen and (max-width: 425px) {
           position: absolute;
@@ -111,6 +166,32 @@
       justify-content: space-between;
       padding: 0;
 
+      @media screen and (max-width: 425px) {
+        padding: 77px 19px 29px;
+      }
+
+      .btn-close {
+        position: absolute;
+        top: 34px;
+        right: 20px;
+        background: url(/src/img/close.svg) center no-repeat;
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    
+        @media screen and (min-width: 426px) {
+          display: none;
+        }
+    
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        display: block;
+      }
+
       .modal-body__title {
         font-weight: 400;
         font-size: 36px;
@@ -133,6 +214,10 @@
       .modal__wrapper-head {
         max-width: 600px;
 
+        @media screen and (max-width: 1024px) {
+          margin-bottom: 40px;
+        }
+
         .modal-body__title {
           margin-bottom: 20px;
         }
@@ -144,6 +229,10 @@
       .modal__wrapper-bottom {
         max-width: 600px;
         margin-left: 42%;
+
+        @media screen and (max-width: 1024px) {
+          margin-left: 0;
+        }
 
         @media screen and (max-width: 425px) {
           margin: 0;
@@ -162,8 +251,11 @@
         }
 
         .tn-btn__primary {
-          display: inline-block;
           margin-bottom: 73px;
+
+          @media screen and (max-width: 425px) {
+            margin-bottom: 0;
+          }
         }
       }
     }
