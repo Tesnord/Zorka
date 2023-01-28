@@ -15,11 +15,25 @@ if (document.querySelector(".main")) {
 // API=======================================================
 // ===============================================================
 
-const REQUEST_URL = "https://jsonplaceholder.typicode.com/users";
+if (document.querySelector(".main")) {
+  const button = document.querySelector(".tn-btn__primary");
+  const handleClick = () => {
+    if (false) {
+      window.location.href = "question.html";
+      // window.location.href = 'answer.html'
+    } else {
+      document.querySelector(".js_btn").click();
+    }
+  };
 
-function sendRequest() {
-  return fetch(REQUEST_URL);
+  button.addEventListener("click", handleClick);
 }
-sendRequest("GET", REQUEST_URL)
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+
+// const REQUEST_URL = "https://jsonplaceholder.typicode.com/users";
+
+// function sendRequest() {
+//   return fetch(REQUEST_URL);
+// }
+// sendRequest("GET", REQUEST_URL)
+//   .then((response) => response.json())
+//   .then((json) => console.log(json));
