@@ -1,14 +1,13 @@
 .footer {
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
   .tn-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 98px;
     border-top: 1px solid #d5f037;
-
-    @media screen and (max-width: 425px) {
-      display: none;
-    }
   }
   &__text {
     font-size: 12px;
