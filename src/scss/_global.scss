@@ -49,6 +49,10 @@ main {
     text-transform: uppercase;
     transition: all 0.5s linear;
 
+    @media screen and (max-width: 425px) {
+      font-size: 18px;
+    }
+
     &__primary {
       color: #000000;
       background: #dfddd3;
@@ -56,7 +60,6 @@ main {
       padding: 23px 104px;
 
       @media screen and (max-width: 425px) {
-        font-size: 18px;
         padding: 23px 100px;
       }
     }

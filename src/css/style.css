@@ -47,6 +47,11 @@ main {
   text-transform: uppercase;
   transition: all 0.5s linear;
 }
+@media screen and (max-width: 425px) {
+  .tn-btn {
+    font-size: 18px;
+  }
+}
 .tn-btn__primary {
   color: #000000;
   background: #dfddd3;
@@ -55,7 +60,6 @@ main {
 }
 @media screen and (max-width: 425px) {
   .tn-btn__primary {
-    font-size: 18px;
     padding: 23px 100px;
   }
 }
@@ -459,9 +463,19 @@ input[type=checkbox]:checked ~ div {
 }
 @media screen and (max-width: 425px) {
   .answer__btn .tn-btn__secondary {
+    display: flex;
+    justify-content: center;
     width: 336px;
     padding: 23px 100px;
   }
+}
+.answer__btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer__btn .tn-btn + .tn-btn {
+  margin-top: 10px;
 }
 
 .loader {

@@ -69,9 +69,20 @@
       padding: 26px 65px;
 
       @media screen and (max-width: 425px) {
+        display: flex;
+        justify-content: center;
         width: 336px;
         padding: 23px 100px;
       }
     }
   }
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.answer__btn .tn-btn + .tn-btn {
+  margin-top: 10px;
 }
