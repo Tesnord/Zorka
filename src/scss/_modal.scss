@@ -4,17 +4,17 @@
       .modal-content {
         background-color: #000000;
 
-        @media screen and (max-width: 425px) {
-          transform: translate(0, 98px);
-          background-color: rgba(0, 0, 0, 0.9);
-        }
-
         &__wrapper {
           height: 100%;
           display: flex;
           flex-direction: column;
           background: rgba(0, 0, 0, 0.9);
           z-index: 2;
+
+          @media screen and (max-width: 425px) {
+            // transform: translate(0, 98px);
+            background-color: rgba(0, 0, 0, 0.9);
+          }
         }
         .modal-header {
           padding: 46px 40px 0 0;
