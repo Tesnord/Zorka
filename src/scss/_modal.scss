@@ -4,6 +4,11 @@
       .modal-content {
         background-color: #000000;
 
+        @media screen and (max-width: 425px) {
+          transform: translate(0, 98px);
+          background-color: rgba(0, 0, 0, 0.9);
+        }
+
         &__wrapper {
           height: 100%;
           display: flex;
