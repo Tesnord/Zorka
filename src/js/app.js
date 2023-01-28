@@ -17,6 +17,9 @@ if (document.querySelector(".main")) {
 
 const REQUEST_URL = "https://jsonplaceholder.typicode.com/users";
 
-fetch(REQUEST_URL)
+function sendRequest() {
+  return fetch(REQUEST_URL);
+}
+sendRequest("GET", REQUEST_URL)
   .then((response) => response.json())
   .then((json) => console.log(json));
