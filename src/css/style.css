@@ -107,6 +107,7 @@ main {
 
 .header {
   width: 100%;
+  padding-bottom: 90px;
 }
 @media screen and (min-width: 426px) {
   .header {
@@ -314,7 +315,21 @@ main {
   }
 }
 .form__text.validate {
-  color: #D5F037;
+  color: #d5f037;
+}
+.form__text::before {
+  content: "Q1";
+  position: absolute;
+  width: 28px;
+  height: 26px;
+  left: 373px;
+  color: #d5f037;
+}
+@media screen and (max-width: 425px) {
+  .form__text::before {
+    top: -37px;
+    left: 20px;
+  }
 }
 
 .textarea--position {
@@ -339,6 +354,16 @@ main {
   .form__create-text {
     width: 336px;
   }
+}
+.form__create-text::before {
+  content: "Q2";
+  position: absolute;
+  width: 28px;
+  height: 26px;
+  height: 26px;
+  text-outline: 0 0 #000;
+  left: 373px;
+  color: #d5f037;
 }
 
 .form__product-text {
@@ -429,7 +454,7 @@ input[type=radio]:disabled {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1875;
-  color: #DFDDD3;
+  color: #dfddd3;
   width: 427px;
 }
 @media screen and (max-width: 500px) {
@@ -441,7 +466,7 @@ input[type=radio]:disabled {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1875;
-  color: #D5F037;
+  color: #d5f037;
 }
 .cta--checked .visible {
   display: none;
@@ -995,4 +1020,4 @@ input[type=radio]:disabled {
   .footer__text--color {
     display: none;
   }
-}
+}/*# sourceMappingURL=style.css.map */

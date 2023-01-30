@@ -78,7 +78,22 @@
   }
 
   &.validate {
-    color:#D5F037;
+    color: #d5f037;
+  }
+
+  &::before {
+    content: "Q1";
+    position: absolute;
+    width: 28px;
+    height: 26px;
+
+    left: 373px;
+    color: #d5f037;
+
+    @media screen and (max-width: 425px) {
+      top: -37px;
+      left: 20px;
+    }
   }
 }
 
@@ -104,6 +119,17 @@
 
   @media screen and (max-width: 425px) {
     width: 336px;
+  }
+
+  &::before {
+    content: "Q2";
+    position: absolute;
+    width: 28px;
+    height: 26px;
+    height: 26px;
+    text-outline: 0 0 #000;
+    left: 373px;
+    color: #d5f037;
   }
 }
 
@@ -178,7 +204,7 @@ input[type="radio"]:disabled {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
-  color: #DFDDD3;
+  color: #dfddd3;
   width: 427px;
 
   @media screen and (max-width: 500px) {
@@ -189,7 +215,7 @@ input[type="radio"]:disabled {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
-    color: #D5F037;
+    color: #d5f037;
   }
 
   .visible {
