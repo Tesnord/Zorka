@@ -313,6 +313,9 @@ main {
     margin-bottom: 10px;
   }
 }
+.form__text.validate {
+  color: #D5F037;
+}
 
 .textarea--position {
   display: flex;
@@ -422,6 +425,28 @@ input[type=radio]:disabled {
   background: rgb(116, 18, 18);
 }
 
+.cta--checked {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: #DFDDD3;
+  width: 427px;
+}
+@media screen and (max-width: 500px) {
+  .cta--checked {
+    width: 100%;
+  }
+}
+.cta--checked span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: #D5F037;
+}
+.cta--checked .visible {
+  display: none;
+}
+
 .answer {
   padding: 108px 0 74px;
 }
@@ -481,15 +506,15 @@ input[type=radio]:disabled {
   line-height: 19px;
   color: #dfddd3;
 }
-.answer__text:not(:nth-last-child(1)) {
-  margin-bottom: 20px;
-}
 @media screen and (max-width: 425px) {
   .answer__text {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 40px;
   }
+}
+.answer .btn--none {
+  display: none;
 }
 @media screen and (max-width: 1200px) {
   .answer__btn {
@@ -970,4 +995,4 @@ input[type=radio]:disabled {
   .footer__text--color {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}

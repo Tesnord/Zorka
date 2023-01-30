@@ -57,16 +57,17 @@
     line-height: 19px;
     color: #dfddd3;
 
-    &:not(:nth-last-child(1)) {
-      margin-bottom: 20px;
-    }
-
     @media screen and (max-width: 425px) {
       font-size: 18px;
       line-height: 22px;
       margin-bottom: 40px;
     }
   }
+
+  .btn--none {
+    display: none;
+  }
+
   &__btn {
     @media screen and (max-width: 1200px) {
       margin-top: 10px;
