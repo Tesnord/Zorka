@@ -17,7 +17,6 @@
 
 .form__input--position {
   display: flex;
-  margin-bottom: 80px;
 
   @media screen and (max-width: 425px) {
     margin-bottom: 62px;
@@ -68,6 +67,7 @@
 .form__text {
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 10px;
 
   color: #dfddd3;
 
@@ -81,6 +81,16 @@
 .textarea--position {
   display: flex;
   flex-direction: column;
+  margin-top: 80px;
+
+  & label {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  & textarea {
+    padding: 15px 0 0 15px;
+  }
 }
 
 .form__create-text {
@@ -106,7 +116,6 @@
 .form__product-create {
   width: 427px;
   height: 140px;
-  margin-bottom: 80px;
   border: 1px solid #bebebe;
   color: #d5f037;
   background: #000000;
