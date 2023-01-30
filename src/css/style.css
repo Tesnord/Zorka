@@ -452,6 +452,9 @@ input[type=radio]:disabled {
   line-height: 43px;
   color: #dfddd3;
 }
+.answer__result-text span {
+  color: #d5f037;
+}
 @media screen and (max-width: 630px) {
   .answer__result-text {
     margin-bottom: 40px;
