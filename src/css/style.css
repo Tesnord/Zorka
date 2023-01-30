@@ -411,6 +411,10 @@ main {
   }
 }
 
+input[type=radio]:disabled {
+  background: rgb(116, 18, 18);
+}
+
 .answer {
   padding: 108px 0 74px;
 }
