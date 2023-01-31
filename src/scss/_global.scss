@@ -10,7 +10,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/Poppins-Light.ttf") format("ttf"),
+  src: url("../fonts/Poppins-Light.ttf") format("ttf");
 }
 
 body {
@@ -76,7 +76,7 @@ main {
         padding: 23px 0;
         display: flex;
         align-items: center;
-        justify-content: center
+        justify-content: center;
       }
     }
 
@@ -91,7 +91,7 @@ main {
         padding: 23px 0;
         display: flex;
         align-items: center;
-        justify-content: center
+        justify-content: center;
       }
     }
 
@@ -112,4 +112,15 @@ main {
   background-image: url(/src/img/background.gif);
   opacity: 0.2;
   z-index: 1;
+}
+
+.form__product-create:focus-visible {
+  outline: none;
+}
+
+.form__product-textarea:focus-visible {
+  outline: none;
+}
+.form__create--position:focus-visible {
+  outline: none;
 }

@@ -111,6 +111,18 @@ main {
   z-index: 1;
 }
 
+.form__product-create:focus-visible {
+  outline: none;
+}
+
+.form__product-textarea:focus-visible {
+  outline: none;
+}
+
+.form__create--position:focus-visible {
+  outline: none;
+}
+
 .header {
   width: 100%;
 }
