@@ -101,6 +101,22 @@
       left: 0%;
     }
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 19px;
+    top: 17%;
+    left: 126%;
+    background-repeat: no-repeat;
+    background-image: url(../img/union.png);
+
+    @media screen and (max-width: 425px) {
+      top: -72%;
+      left: 95%;
+    }
+  }
 }
 .form__format {
   font-size: 22px;
@@ -147,12 +163,28 @@
     width: 28px;
     height: 26px;
 
-    right: 122%;
+    right: 123%;
     color: #d5f037;
 
     @media screen and (max-width: 425px) {
       top: -43%;
       left: 0%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 19px;
+    top: 17%;
+    left: 127%;
+    background-repeat: no-repeat;
+    background-image: url(../img/union.png);
+
+    @media screen and (max-width: 425px) {
+      top: -39%;
+      left: 95%;
     }
   }
 }
@@ -178,6 +210,22 @@
     @media screen and (max-width: 425px) {
       top: -81%;
       left: 0%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 19px;
+    top: 17%;
+    left: 128%;
+    background-repeat: no-repeat;
+    background-image: url(../img/union.png);
+
+    @media screen and (max-width: 425px) {
+      top: -75%;
+      left: 95%;
     }
   }
 }

@@ -337,6 +337,22 @@ main {
     left: 0%;
   }
 }
+.form__text::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 19px;
+  top: 17%;
+  left: 126%;
+  background-repeat: no-repeat;
+  background-image: url(../img/union.png);
+}
+@media screen and (max-width: 425px) {
+  .form__text::after {
+    top: -72%;
+    left: 95%;
+  }
+}
 
 .form__format {
   font-size: 22px;
@@ -381,13 +397,29 @@ main {
   position: absolute;
   width: 28px;
   height: 26px;
-  right: 122%;
+  right: 123%;
   color: #d5f037;
 }
 @media screen and (max-width: 425px) {
   .form__create-text::before {
     top: -43%;
     left: 0%;
+  }
+}
+.form__create-text::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 19px;
+  top: 17%;
+  left: 127%;
+  background-repeat: no-repeat;
+  background-image: url(../img/union.png);
+}
+@media screen and (max-width: 425px) {
+  .form__create-text::after {
+    top: -39%;
+    left: 95%;
   }
 }
 
@@ -414,6 +446,22 @@ main {
   .form__product-text::before {
     top: -81%;
     left: 0%;
+  }
+}
+.form__product-text::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 19px;
+  top: 17%;
+  left: 128%;
+  background-repeat: no-repeat;
+  background-image: url(../img/union.png);
+}
+@media screen and (max-width: 425px) {
+  .form__product-text::after {
+    top: -75%;
+    left: 95%;
   }
 }
 
