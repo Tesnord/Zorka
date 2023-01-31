@@ -22,6 +22,13 @@ if (document.querySelector(".main")) {
   });
 }
 
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then((response) => {
+    return response.json();
+  })
+  .then((date) => console.log(date))
+  .catch((err) => console.log(err));
+
 if (document.querySelector(".question")) {
   const refs = {
     radio1: document.getElementById("radio-1"),
@@ -61,30 +68,30 @@ if (document.querySelector(".question")) {
    *   SUBMIT FORM
    */
 
-  // refs.form.addEventListener("click", () => {
-  //   if (refs.radio1.checked) {
-  //     localStorage.setItem("questionOne", "video script");
-  //     if (refs.radio3.checked) {
-  //       localStorage.setItem("questionTwo", "influencer ads");
-  //     } else if (refs.radio4.checked) {
-  //       localStorage.setItem("questionTwo", "promo video");
-  //     } else {
-  //       localStorage.removeItem("questionTwo");
-  //     }
-  //   } else if (refs.radio2.checked) {
-  //     localStorage.setItem("questionOne", "CTA");
-  //     localStorage.removeItem("questionTwo");
-  //   }
-  //   localStorage.setItem(
-  //     "product",
-  //     document.querySelector("#form__create").value
-  //   );
-  //   localStorage.setItem(
-  //     "name",
-  //     document.querySelector("#form__product").value
-  //   );
-  //   window.location.href = "loader.html";
-  // });
+  refs.form.addEventListener("click", () => {
+    if (refs.radio1.checked) {
+      localStorage.setItem("questionOne", "video script");
+      if (refs.radio3.checked) {
+        localStorage.setItem("questionTwo", "influencer ads");
+      } else if (refs.radio4.checked) {
+        localStorage.setItem("questionTwo", "promo video");
+      } else {
+        localStorage.removeItem("questionTwo");
+      }
+    } else if (refs.radio2.checked) {
+      localStorage.setItem("questionOne", "CTA");
+      localStorage.removeItem("questionTwo");
+    }
+    localStorage.setItem(
+      "product",
+      document.querySelector("#form__create").value
+    );
+    localStorage.setItem(
+      "name",
+      document.querySelector("#form__product").value
+    );
+    window.location.href = "loader.html";
+  });
 }
 
 /*
