@@ -137,10 +137,17 @@ if (document.querySelector(".answer")) {
   /*
    *Валидация формы
    */
-  function onValidationInput() {}
-  if (document.getElementById("js-validation").value === "") {
-  }
 
+  let textareaOne = document.getElementById("validation__create").value;
+  document.querySelector(".form__wrapper").addEventListener("click", () => {
+    if (textareaOne === "") {
+      console.log("err");
+    }
+
+    return false;
+  });
+
+  onValidationInput();
   /*
    * POP-UP
    */
