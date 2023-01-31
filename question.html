@@ -47,19 +47,31 @@
       </div>
     </header>
     <main class="question">
-      <div class="tn-container">
+      <div class="tn-container questin-container">
         <form class="form__wrapper">
-          <p class="form__text qOne_validate form__text--Q1">
+          <p class="form__text qOne_validate">
             What should AI Agent create first?
           </p>
           <div class="form__create--position">
             <div class="form_radio_btn">
-              <input id="radio-1" type="radio" name="radio__create" value="1" />
+              <input
+                id="radio-1"
+                type="radio"
+                name="radio__create"
+                value="1"
+                required
+              />
               <label class="radio__label" for="radio-1">Video Script</label>
             </div>
 
             <div class="form_radio_btn">
-              <input id="radio-2" type="radio" name="radio__create" value="2" />
+              <input
+                id="radio-2"
+                type="radio"
+                name="radio__create"
+                value="2"
+                required
+              />
               <label class="radio__label" for="radio-2">CTA</label>
             </div>
           </div>
@@ -75,6 +87,7 @@
                   type="radio"
                   name="radio__product"
                   value="3"
+                  required
                 />
                 <label class="radio__label" for="radio-3">Influencer Ads</label>
               </div>
@@ -85,6 +98,7 @@
                   type="radio"
                   name="radio__product"
                   value="4"
+                  required
                 />
                 <label class="radio__label" for="radio-4">Promo Video</label>
               </div>
@@ -111,7 +125,7 @@
 
             <textarea
               class="form__product-textarea"
-              id="form__product"
+              id="form__product js-validation"
               name="form__product"
               placeholder="Type the name of your product..."
             ></textarea>
