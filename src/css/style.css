@@ -348,7 +348,7 @@ main {
 @media screen and (max-width: 425px) {
   .form__text::after {
     top: -72%;
-    left: 95%;
+    left: 97%;
   }
 }
 
