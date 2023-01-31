@@ -123,6 +123,10 @@ main {
   outline: none;
 }
 
+.form__button:focus-visible {
+  outline: none;
+}
+
 .header {
   width: 100%;
 }
