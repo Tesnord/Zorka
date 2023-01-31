@@ -107,7 +107,6 @@ main {
 
 .header {
   width: 100%;
-  padding-bottom: 90px;
 }
 @media screen and (min-width: 426px) {
   .header {
@@ -236,6 +235,12 @@ main {
   }
 }
 
+@media screen and (max-width: 425px) {
+  .question {
+    padding-top: 90px;
+  }
+}
+
 .form__wrapper {
   display: flex;
   flex-direction: column;
@@ -302,6 +307,7 @@ main {
 }
 
 .form__text {
+  position: relative;
   font-size: 22px;
   line-height: 26px;
   margin-bottom: 10px;
@@ -322,13 +328,27 @@ main {
   position: absolute;
   width: 28px;
   height: 26px;
-  left: 373px;
+  right: 125%;
   color: #d5f037;
 }
 @media screen and (max-width: 425px) {
   .form__text::before {
-    top: -37px;
-    left: 20px;
+    top: -81%;
+    left: 0%;
+  }
+}
+
+.form__format {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 10px;
+  color: #dfddd3;
+}
+@media screen and (max-width: 425px) {
+  .form__format {
+    font-size: 20px;
+    margin-top: 22px;
+    margin-bottom: 10px;
   }
 }
 
@@ -346,6 +366,7 @@ main {
 }
 
 .form__create-text {
+  position: relative;
   width: 410px;
   color: #dfddd3;
   margin-bottom: 10px;
@@ -360,13 +381,18 @@ main {
   position: absolute;
   width: 28px;
   height: 26px;
-  height: 26px;
-  text-outline: 0 0 #000;
-  left: 373px;
+  right: 122%;
   color: #d5f037;
+}
+@media screen and (max-width: 425px) {
+  .form__create-text::before {
+    top: -43%;
+    left: 0%;
+  }
 }
 
 .form__product-text {
+  position: relative;
   width: 410px;
   color: #dfddd3;
   margin-bottom: 10px;
@@ -374,6 +400,20 @@ main {
 @media screen and (max-width: 425px) {
   .form__product-text {
     width: 336px;
+  }
+}
+.form__product-text::before {
+  content: "Q3";
+  position: absolute;
+  width: 28px;
+  height: 26px;
+  right: 122%;
+  color: #d5f037;
+}
+@media screen and (max-width: 425px) {
+  .form__product-text::before {
+    top: -81%;
+    left: 0%;
   }
 }
 
