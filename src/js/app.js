@@ -44,8 +44,10 @@ if (document.querySelector(".question")) {
     const collapseList = [...collapseElementList].map(
       (collapseEl) => new bootstrap.Collapse(collapseEl)
     );
-    if (document.querySelector(".cta--checked").classList.contains("visible")) {
-      document.querySelector(".cta--checked").classList.add("visible");
+    if (
+      !document.querySelector(".cta--checked").classList.contains("tn-visible")
+    ) {
+      document.querySelector(".cta--checked").classList.add("tn-visible");
     }
   });
   refs.radio2.addEventListener("change", () => {
@@ -54,11 +56,17 @@ if (document.querySelector(".question")) {
       const collapseList = [...collapseElementList].map(
         (collapseEl) => new bootstrap.Collapse(collapseEl)
       );
-      if (
-        document.querySelector(".cta--checked").classList.contains("visible")
-      ) {
-        document.querySelector(".cta--checked").classList.remove("visible");
+      if (refs.radio3.checked) {
+        refs.radio3.checked = false;
       }
+      if (refs.radio4.checked) {
+        refs.radio4.checked = false;
+      }
+    }
+    if (
+      document.querySelector(".cta--checked").classList.contains("tn-visible")
+    ) {
+      document.querySelector(".cta--checked").classList.remove("tn-visible");
     }
     refs.radio3.addEventListener("change", () => {});
     refs.radio4.addEventListener("change", () => {});
@@ -68,29 +76,94 @@ if (document.querySelector(".question")) {
    *   SUBMIT FORM
    */
 
+  // refs.form.addEventListener("click", () => {
+  //   if (refs.radio1.checked) {
+  //     localStorage.setItem('questionOne', 'video script')
+  //     if (refs.radio3.checked) {
+  //       localStorage.setItem('questionTwo', 'influencer ads')
+  //     } else if (refs.radio4.checked) {
+  //       localStorage.setItem('questionTwo', 'promo video')
+  //     } else {
+  //       localStorage.removeItem('questionTwo')
+  //     }
+  //   } else if (refs.radio2.checked) {
+  //     localStorage.setItem('questionOne', 'CTA')
+  //     localStorage.removeItem('questionTwo')
+  //   }
+  //   localStorage.setItem('product', document.querySelector('#form__create').value)
+  //   localStorage.setItem('name', document.querySelector('#form__product').value)
+  //   window.location.href = "loader.html"
+  // });
+
   refs.form.addEventListener("click", () => {
-    if (refs.radio1.checked) {
+    if (!refs.radio1.checked) {
+      console.log("radio1 validate");
+    } else {
       localStorage.setItem("questionOne", "video script");
+      console.log("refs.radio1.checked", refs.radio1.checked);
       if (refs.radio3.checked) {
         localStorage.setItem("questionTwo", "influencer ads");
+        console.log("Q1.2", refs.radio3.checked);
       } else if (refs.radio4.checked) {
         localStorage.setItem("questionTwo", "promo video");
+        console.log("Q1.2", refs.radio4.checked);
       } else {
         localStorage.removeItem("questionTwo");
+        console.log("Q1.2 validate");
       }
-    } else if (refs.radio2.checked) {
-      localStorage.setItem("questionOne", "CTA");
-      localStorage.removeItem("questionTwo");
     }
-    localStorage.setItem(
-      "product",
-      document.querySelector("#form__create").value
-    );
-    localStorage.setItem(
-      "name",
-      document.querySelector("#form__product").value
-    );
-    window.location.href = "loader.html";
+
+    if (!refs.radio2.checked) {
+      console.log("radio2 validate");
+    } else {
+      localStorage.setItem("questionOne", "CTA");
+      console.log("refs.radio2.checked", refs.radio2.checked);
+
+      if (localStorage.getItem("questionTwo")) {
+        localStorage.removeItem("questionTwo");
+      }
+    }
+
+    if (document.querySelector("#form__create").value === "") {
+      console.log("form__create validate");
+    } else {
+      localStorage.setItem(
+        "product",
+        document.querySelector("#form__create").value
+      );
+      console.log(
+        "form__create",
+        document.querySelector("#form__create").value
+      );
+    }
+
+    if (document.querySelector("#form__product").value === "") {
+      console.log("form__product validate");
+    } else {
+      localStorage.setItem(
+        "name",
+        document.querySelector("#form__product").value
+      );
+      console.log(
+        "form__product",
+        document.querySelector("#form__product").value
+      );
+    }
+
+    if (true) {
+      console.log(
+        (document.querySelector("#form__product").value === "" &&
+          document.querySelector("#form__create").value === "" &&
+          refs.radio3.checked) ||
+          (refs.radio4.checked && refs.radio1.checked) ||
+          refs.radio2.checked
+      );
+      console.log("form success");
+      console.log(
+        "==================================================================================="
+      );
+      // window.location.href = "loader.html"
+    }
   });
 }
 
@@ -141,20 +214,6 @@ if (document.querySelector(".answer")) {
     )} ${localStorage.getItem("name")} with no more than 5 words</span>`;
   }
 
-  /*
-   *Валидация формы
-   */
-
-  let textareaOne = document.getElementById("validation__create").value;
-  document.querySelector(".form__wrapper").addEventListener("click", () => {
-    if (textareaOne === "") {
-      console.log("err");
-    }
-
-    return false;
-  });
-
-  onValidationInput();
   /*
    * POP-UP
    */
