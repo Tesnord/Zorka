@@ -2,31 +2,31 @@
  *   API
  */
 
-if (document.querySelector(".main")) {
-  const REQUEST_URL = "https://jsonplaceholder.typicode.com/users";
+// if (document.querySelector(".main")) {
+//   const REQUEST_URL = "https://jsonplaceholder.typicode.com/users";
 
-  function sendRequest() {
-    return fetch(REQUEST_URL);
-  }
+//   function sendRequest() {
+//     return fetch(REQUEST_URL);
+//   }
 
-  document.querySelector(".tn-btn__primary").addEventListener("click", () => {
-    sendRequest("GET", REQUEST_URL)
-      .then((response) => response.json())
-      .then((json) => {
-        if (true) {
-          window.location.href = "question.html";
-        } else {
-          document.querySelector(".js_btn").click();
-        }
-      });
-  });
-}
+//   document.querySelector(".tn-btn__primary").addEventListener("click", () => {
+//     sendRequest("GET", REQUEST_URL)
+//       .then((response) => response.json())
+//       .then((json) => {
+//         if (true) {
+//           window.location.href = "question.html";
+//         } else {
+//           document.querySelector(".js_btn").click();
+//         }
+//       });
+//   });
+// }
 
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((response) => {
     return response.json();
   })
-  .then((data) => console.log(data))
+  .then((name) => console.log(name))
 
   .catch((err) => console.log(err));
 
